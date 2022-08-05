@@ -1,5 +1,5 @@
 # Futsimul ⚽
 
-## Na 1º parte foi criada uma verão em Pt para o app
+## Na 1º parte foi criada uma verão em Pt para o app;
 
-## Na2º
+## Na 2º
