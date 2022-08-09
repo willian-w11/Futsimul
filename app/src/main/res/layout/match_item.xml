@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margem_padrao">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/tvHometeam"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="@dimen/team_image_size"
+            android:layout_marginStart="@dimen/margem_padrao"
+            android:layout_marginTop="@dimen/margem_padrao"
+            android:contentDescription="@string/cd_home_team"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvHomeTeamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/tvHometeam"
+            app:layout_constraintStart_toStartOf="@+id/tvHometeam"
+            app:layout_constraintTop_toBottomOf="@+id/tvHometeam"
+            tools:text="Time da casa" />
+
+        <TextView
+            android:id="@+id/tvHomeTeamPlacar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margem_padrao"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/tvHometeam"
+            app:layout_constraintEnd_toStartOf="@+id/tvVersus"
+            app:layout_constraintStart_toEndOf="@+id/tvHometeam"
+            app:layout_constraintTop_toTopOf="@+id/tvHometeam"
+            tools:text="2" />
+
+        <TextView
+            android:id="@+id/tvVersus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_versus"
+            app:layout_constraintBottom_toTopOf="@+id/tvHomeTeamName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvHometeam" />
+
+        <ImageView
+            android:id="@+id/tvAwayTeam"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="@dimen/team_image_size"
+            android:layout_marginTop="@dimen/margem_padrao"
+            android:layout_marginEnd="@dimen/margem_padrao"
+            android:contentDescription="@string/cd_escudo_do_time_visitante"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvAwayTeamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_padrao"
+            app:layout_constraintEnd_toEndOf="@+id/tvAwayTeam"
+            app:layout_constraintStart_toStartOf="@+id/tvAwayTeam"
+            app:layout_constraintTop_toBottomOf="@+id/tvAwayTeam"
+            tools:text="time visitante" />
+
+        <TextView
+            android:id="@+id/tvAwayTeamPlacar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAwayTeam"
+            app:layout_constraintEnd_toStartOf="@+id/tvAwayTeam"
+            app:layout_constraintStart_toEndOf="@+id/tvVersus"
+            app:layout_constraintTop_toTopOf="@+id/tvAwayTeam"
+            tools:text="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

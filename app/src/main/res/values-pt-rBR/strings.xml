@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="cd_botsimulador">Botão para iniciar a simulação das partidas de futebol</string>
+    <string name="escudo_do_time_mandante">Escudo do time Mandante</string>
+    <string name="cd_home_team">Escudo do time Mandante</string>
+    <string name="cd_escudo_do_time_visitante">Escudo do time visitante</string>
+</resources>
